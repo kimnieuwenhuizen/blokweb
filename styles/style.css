@@ -8,43 +8,22 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.42857;
 
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 2em;
-    width: 2em;
-    }
-
-.zoek {
-        display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 2em;
-    width: 2em;
-}
-.logo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 0.5em;
-
-
+img {
+    max-width: 100%;
 }
 
-.hart {
-       display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 2em;
+ul {
+    display: block;
+}
+
+header img {
     width: 2em;
 }
+
 
 h1 {
     background-color: black;
@@ -52,31 +31,24 @@ h1 {
     padding: 1em;
     color: white;
     font-size: 0.8em;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-    position: relative;
+    margin-top: 1em;
+    margin-bottom: 0em;
     padding: 0.68em 1em;
     margin-left: -1em;
-    margin-right: -1em;
+    margin-right: -2em;
+
 }
 
-img {
-    border-style: none;
-    border-width: 1px;
-    border-radius: 0px;
-    max-width: 120%;
-    height: auto;
-    margin-left: -1em;
-    margin-right: 1em;
-    margin-top: 0em;
-
+.logo {
+    height: 2.5em;
+    width: 4.8em;
 }
 
 .shopnow {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 16.5em;
+    bottom: 18em;
     position: absolute;
     padding: 10px 20px;
     background: #ffffff;
@@ -87,12 +59,30 @@ img {
 
 }
 
-h2 {
-    font-size: 1em;
+div {
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: -11em;
+    margin-bottom: 1em;
 
 
 }
 
+header {
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50em;
+}
+
+/*
 .navigatie {
     padding: 1em 5em 1em 1em;
     display: flex;
@@ -110,33 +100,107 @@ h2 {
 
 
 }
+*/
 
-h3 {
+h2: first-of-type {
     font-size: 1em;
+
+}
+
+.navigatie li {
+    width: 100%;
+    background: lightgrey;
+    padding: 1em;
+    margin-top: 0.2em;
+    margin-left: -0.5em;
+
+}
+
+.navigatie {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.ring {
+    width: 4.5em;
+    height: 4.5em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -10em;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
 
 
 
+
+
+
+
+
+h3:last-of-type {
+    margin-top: 1em;
+    font-size: 1.8em;
+    font-weight: 800;
+
+
+}
+
+h4 {
+    margin-top: -1.5em;
+}
+
+h5 {
+    font-size: 0.7em;
+   margin-top: -1.2em;
+}
+
+h6 {
+    font-size: 0.7em;
+    color: #DA92AD;
+    margin-top: 1.5em;
 }
 
 .fotos {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 26.5em;
-    height: 30.5em;
+    width: 100%;
     list-style-type: none;
-    margin-right: 7em;
-    margin-left: -3.5em;
-    margin-top: 2em;
+    padding: 0;
+    margin-top: 1em;
+}
 
+.fotos li {
+    margin-right: 1em;
+}
 
+.fotos li:last-child {
+    margin-right: 0;
+}
+
+.fotos a {
+    width: 100%;
+}
+
+.fotos img {
+    width: 100%;
 }
 
 .list {
-margin-left: 0.4em;
+    margin-left: 0.4em;
+}
+
+
+.footer1 {
+    margin-top: 1em;
+    margin-left: -2em;
+    margin-right: -2em;
+    padding-top: 0.2em;
+    color: white;
+    background-color: black;
+    list-style-type: none;
+}
+
+.footer {
+    margin-top: 1em;
+
 }
