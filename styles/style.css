@@ -20,12 +20,40 @@ ul {
     display: block;
 }
 
+
+/* INDEX PAGINA */
+/* NAVIGATIE BAR */
 header img {
-    width: 2em;
+    width: 50px;
+    height: 50px;
 }
 
+header svg
+ /*
+header img:nth-of-type(3) {
+    width: 50px;
+    height: 50px;
+}
 
-h1 {
+header img:nth-of-type(4) {
+    width: 50px;
+    height: 50px;
+}
+
+header img:nth-of-type(5) {
+    width: 50px;
+    height: 50px;
+}
+
+header img:nth-of-type(6) {
+    width: 50px;
+    height: 50px;
+}
+*/
+
+
+/* Gratis verzending met Budbee */
+section:nth-of-type(1) h1{
     background-color: black;
     text-align: center;
     padding: 1em;
@@ -49,6 +77,7 @@ h1 {
     justify-content: center;
     align-items: center;
     bottom: 18em;
+    margin-bottom: 0em;
     position: absolute;
     padding: 10px 20px;
     background: #ffffff;
@@ -82,47 +111,39 @@ div {
     height: 50em;
 }
 
-/*
-.navigatie {
-    padding: 1em 5em 1em 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    list-style-type: none;
-
-
-}
-
-.nav {
-    background-color: #F7F7F7;
-    margin-top: 0.3em;
-
-
-}
-*/
 
 h2: first-of-type {
     font-size: 1em;
 
 }
 
-.navigatie li {
+/* Categorien */
+section:nth-of-type(2) ul li {
+    display: flex;
     width: 100%;
     background: lightgrey;
     padding: 1em;
     margin-top: 0.2em;
     margin-left: -0.5em;
+    margin-right: -3em;
+
 
 }
 
-.navigatie {
+section:nth-of-type(2) li img {
+    margin-left: auto;
+}
+
+section:nth-of-type(2) ul {
     list-style-type: none;
     padding: 0;
+    margin-top: -12em;
+    margin-right: -2em;
+
 
 }
 
-.ring {
+section:nth-of-type(2) ul img {
     width: 4.5em;
     height: 4.5em;
     display: flex;
@@ -131,13 +152,7 @@ h2: first-of-type {
 
 }
 
-
-
-
-
-
-
-
+/* Shop our favorite gifts */
 h3:last-of-type {
     margin-top: 1em;
     font-size: 1.8em;
@@ -146,13 +161,14 @@ h3:last-of-type {
 
 }
 
+
 h4 {
     margin-top: -1.5em;
 }
 
 h5 {
     font-size: 0.7em;
-   margin-top: -1.2em;
+    margin-top: -1.2em;
 }
 
 h6 {
@@ -161,46 +177,84 @@ h6 {
     margin-top: 1.5em;
 }
 
-.fotos {
+
+/* FAVORIETEN */
+section:nth-of-type(3) ul {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     list-style-type: none;
     padding: 0;
     margin-top: 1em;
+
 }
 
-.fotos li {
-    margin-right: 1em;
-}
-
-.fotos li:last-child {
+section:nth-of-type(3) ul li {
     margin-right: 0;
+
 }
 
-.fotos a {
-    width: 100%;
+section:nth-of-type(3) ul li:nth-of-type(2) p {
+    margin-left: 1.6em;
 }
 
-.fotos img {
-    width: 100%;
-}
-
-.list {
-    margin-left: 0.4em;
+section:nth-of-type(3) ul li:nth-of-type(3) p {
+    margin-left: 1.1em;
 }
 
 
-.footer1 {
+
+
+/* DETAILPAGINA */
+
+/* routepad */
+.route {
+    font-size: 0.7em;
+    color: #888888
+}
+
+/* titel adventkalender */
+.titel {
+   font-size: 0.6em;
+}
+
+/* prijs adventkalender */
+
+.prijs {
+   font-size: 0.9em;
+
+}
+
+/* schrijf eerste review */
+.review {
+    font-size: 0.8em;
+    color: #DD92A3;
+    text-decoration-line: underline;
+
+}
+
+.winkelwagen {
+   font-size: 18px;
+    color: white;
+    background-color: #E9B9C4;
+    padding: 14px 17px;
+    border: none;
+    border-radius: 0.2em;
+}
+/* FOOTER */
+footer ul {
     margin-top: 1em;
     margin-left: -2em;
     margin-right: -2em;
+    margin-bottom: -3em;
     padding-top: 0.2em;
+    padding-bottom: 1em;
     color: white;
     background-color: black;
     list-style-type: none;
 }
 
-.footer {
-    margin-top: 1em;
+footer ul li {
+    margin-top: 2em;
 
 }

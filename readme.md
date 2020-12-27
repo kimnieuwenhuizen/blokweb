@@ -6,9 +6,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. DLO
+2. Code Pen
+3. https://www.w3schools.com/html/html_responsive.asp
+4.
 
 
 
@@ -24,19 +25,54 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Opgestelde vragen voor de voortgang:
+- Ik heb nu random sections gebruikt maar ik heb gehoord dat sections en articles een header moeten
+hebben. Moet ik deze veranderen in divjes?
+
+- Hoe werkt het :nth-of-type bij de detailpagina, telt het door of een id geven?
+
+- Moet ik op de detailpagina de carrousel maken of is dit te lastig voor mij?
+
+- Kenmerken / omschrijving / specificaties is volgensmij met javascript, moet ik dit maken
+of kan dit ook onder elkaar?
 
 
+Aantekeningen:
 
 ## Voortgang 2 (week 5)
+### Agenda voor meeting
 
--same as voortgang 1-
+VOORTGANG 2 WEEK 5
+
+-samen met je groepje opstellen-
+
+
+
+| student 1: | student 2: | student 3 | student 4
+| Babs | Kim | Dylan | Esther
+| How to carrousel maken | IMG swipen en of klikken | Icoon rechts zetten | Hoe krijg hover langzaam
+| Hoe minder regels CSS? | Show menutje | responsive | Tekst niet meeschalen puls rondje
+| | | | slide tekst in footer
+
+Aantekeningen:
+- Afbeeldingen in photoshop zetten en zelfde pixels maken.
+- :nth-of-type gebruiken <section> <ul> in css
+- in list item plaatje, plaatje flexboxen
+
 
 
 
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
+
+Ik heb een begin gemaakt aan de homepage. Ik had wat problemen met alle plaatjes vinden en de navigatiebar
+flexboxen. Ik heb moeite met het beginnen. Hier heb ik Danny en Linda over gesproken en het is beter gegaan.
+
+De standaard html en css gaat me wel goed af. Ik zie wel dat flexboxen me niet altijd lukt. Ook begreep ik
+eerst niet dat je flexbox op de container moet zetten.
+
+
 
 -dit ging goed & dit was lastig-
 
@@ -46,6 +82,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Agenda voor meeting
 
+### Agenda voor meeting
+
+VOORTGANG 1 WEEK 3
+
+-samen met je groepje opstellen-
+
+
+
+| student 1: | student 2: | student 3
+| Babs | Kim | Esther
+| Classes /ID's | Button ih midden plaatsen | Hoe Burger menu maken / header fixes krijgen
+| HTML terug krijgen | UL vormgeven | nog een punt | dit wil ik zeker | IPV flexbox vervangen met Grid?
+| Site op niveau? | Plaatjes van de NAV niet vd site | LU in NAV onderin / Alles met de footer
 -samen met je groepje opstellen-
 
 | student 1      | student 2          | student 3    | student 4        |
@@ -62,7 +111,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+Breakdownschetsen had ik uitgeprint en met handgeschreven gemaakt.
 
 
 
