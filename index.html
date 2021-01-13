@@ -1,5 +1,4 @@
-<!doctype html>
-<html lang="nl">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -10,103 +9,212 @@
 
     <link href="styles/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-
-    <!-- NAVIGATIE BAR -->
     <header>
 
-        <img src="images/hamburger.png" alt="menu">
+        <!-- hamburger menu (interactie)-->
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>menu</p>
+        </div>
 
-        <img src="images/zoeken.png" alt="menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
-            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-        </svg>
-        <img class='logo' src="images/logo.webp" alt="logo">
-        <img src="images/profiel.jpg" alt="profiel">
-        <img src="images/hart.jpg" alt='hart'>
-        <img src="images/mand.png" alt="winkelmand">
 
+        <nav>
+            <h2>Menu</h2>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+
+
+            <ul>
+                <li>
+                    <a href="detail.html">Nieuw</a>
+                    <img src="img/right-arrow.svg" alt="Nieuw">
+                </li>
+                <li>
+                    <a href="detail.html">Bestsellers</a>
+                </li>
+                <li>
+                    <a href="detail.html">Sale</a>
+                    <img src="img/right-arrow.svg" alt="Sale">
+                </li>
+                <li>
+                    <a href="detail.html">Sieraden</a>
+                    <img src="img/right-arrow.svg" alt="Sieraden">
+                </li>
+                <li>
+                    <a href="detail.html">Kleding</a>
+                    <img src="img/right-arrow.svg" alt="Kleding">
+                </li>
+                <li>
+                    <a href="detail.html">Accessoires</a>
+                    <img src="img/right-arrow.svg" alt="Accessoires">
+                </li>
+                <li>
+                    <a href="detail.html">Shop instagram</a>
+                </li>
+                <li>
+                    <a href="detail.html">Collecties</a>
+                    <img src="img/right-arrow.svg" alt="Collecties">
+                </li>
+                <li>
+                    <a href="detail.html">Deals</a>
+                    <img src="img/right-arrow.svg" alt="Deals">
+                </li>
+                <li>
+                    <a href="detail.html">Cadeaus</a>
+                    <img src="img/right-arrow.svg" alt="Cadeaus">
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- afbeeldingen navigatie -->
+
+        <img src="img/search.svg" alt="zoek">
+        <img src="img/notification.svg" alt="meldingen">
+        <img src="img/my-jewellery-logo.png" alt="logo">
+        <img src="img/profile.svg" alt="profiel">
+        <img src="img/heart.svg" alt="favorieten">
+        <img src="img/shopping-bag-of-normal-design-outline.svg" alt="winkelwagen">
+        <div></div>
     </header>
 
-    <!-- Blok onder navigatiebar-->
-<section>
-    <h1>Gratis verzending met Budbee!</h1>
-    </section>
+    <main>
+        <p>Snelle levering binnen 1-2 dagen!</p>
+        <img src="img/newarrivals.jpg" alt="new arrivals">
+        <button>Shop now</button>
 
 
-    <!-- Button shop now -->
-    <div>
-        <img src="images/newarrivals.jpg" alt="newarrivalpic">
-        <button class="shopnow">Shop now</button>
-    </div>
-
-
-    <!-- Categoriën -->
-    <section>
+        <!-- categorieën -->
         <ul>
-            <li><p>Nieuw</p><img class='ring' src="images/ring.webp"></li>
-            <li>Sieraden <img class='armband' src="images/armbandnieuw.webp"></li>
-            <li>Kleding <img class='jurk' src="images/jurknieuw.webp"> </li>
-            <li>Accessoires <img class='mondkapje' src="images/mondkapjenieuw.webp"> </li>
-            <li>Bestsellers <img class='bestsellers' src="images/bestsellers.webp"> </li>
-            <li>Shop Instagram <img class='instagram' src="images/instagram.webp"></li>
-        </ul>
-    </section>
-
-    <!-- Favorieten (adventkalender) -->
-    <h3>Shop our favorite gifts</h3>
-
-    <!-- Favorieten producten -->
-    <section>
-        <ul>
-            <li><a href="detail.html">
-                    <img src="images/adventkalender.jpg" alt="adventkalender">
-                    <p>AdventKalender</p>
+            <li class="btn from-left">
+                <a href="detail.html">
+                    <p>Nieuw</p>
+                    <img src="img/ring.webp" alt="nieuw">
                 </a>
             </li>
-
-            <li><img src="images/giftcard.jpg" alt="giftcard">
-                <p>Giftcard</p>
+            <li class="btn from-left">
+                <a href="detail.html">
+                    <p>Sieraden</p>
+                    <img src="img/armbandnieuw.webp" alt="sieraden">
+                </a>
             </li>
-
-            <li> <img src="images/armbandje.jpg">
-                <p>Love Bracelet</p>
+            <li class="btn from-left">
+                <a href="detail.html">
+                    <p>Kleding</p>
+                    <img src="img/jurknieuw.webp" alt="kleding">
+                </a>
             </li>
-
+            <li class="btn from-left">
+                <a href="detail.html">
+                    <p>Accessoires</p>
+                    <img src="img/mondkapjenieuw.webp" alt="accessoires">
+                </a>
+            </li>
+            <li class="btn from-left">
+                <a href="detail.html">
+                    <p>Bestsellers</p>
+                    <img src="img/bestsellers.webp" alt="bestsellers">
+                </a>
+            </li>
+            <li class="btn from-left">
+                <a href="detail.html">
+                    <p>Shop Instagram</p>
+                    <img src="img/instagram.webp" alt="shop instagram">
+                </a>
+            </li>
         </ul>
-    </section>
+        <section>
+            <h1>#myjewellery styled by you!</h1>
+            <ul>
+                <li><img src="img/fit.jpeg" alt=""></li>
+                <li><img src="img/fit%20(1).jpeg" alt="zilvere glitter jurk"></li>
+                <li><img src="img/fit%20(2).jpeg" alt="zwarte satijnen jurk"></li>
+                <li><img src="img/fit%20(3).jpeg" alt="zwarte satijnen jurk 2"></li>
+                <li><img src="img/fit%20(4).jpeg" alt="panter jas"></li>
+                <li><img src="img/fit%20(6).jpeg" alt="panter jas 2"></li>
+                <li><img src="img/fit%20(7).jpeg" alt="trui wit"></li>
+            </ul>
+        </section>
+        <p> Sieraden, accessoires & kleding!
+            Nice to meet you!
+            De meest on-trend sieraden, nieuwste fashion trends, de hipste accessoires, te gekke printjes en de fijnste kleding. Bij My Jewellery vind je het allemaal! Elke dag wordt de nieuw categorie aangevuld met trendy sieraden, kleding en accessoires! Shop de leukste kettingen, armbanden, oorbellen, ringen & nog veel meer geweldige items!
+        </p>
+        <a class="chat" href="detail.html">
+            <div></div>
+        </a>
+    </main>
 
-
-    <!-- Personal jewellery en personal gift -->
-    <img src="images/personal.webp" alt=personaljewellery>
-
-    <img src="images/gift.webp" alt="personalgift">
-
-
-    <!-- Uitleg van de website -->
-    <h3>Sieraden, accessoires & kleding!</h3>
-    <h4>Nice to meet you!</h4>
-    <h5>De meest on-trend sieraden, nieuwste fashion trends, de hipste accessoires, te gekke printjes en de fijnste kleding. Bij My Jewellery vind je het allemaal! Elke dag wordt de nieuw categorie aangevuld met trendy sieraden, kleding en accessoires! Shop de leukste kettingen, armbanden, oorbellen, ringen & nog veel meer geweldige items!</h5>
-    <h6>Lees meer</h6>
-
-
-    <!-- FOOTER -->
+    <!-- footer -->
     <footer>
         <ul>
-            <li>Betaal- & verzendmethoden</li>
-            <li>Service</li>
-            <li>Algemeen</li>
-            <li>My Jewellery</li>
-            <li>Stay in touch</li>
+            <li>
+                <a href="detail.html">
+                    <p>Betaal- & verzendmethoden</p>
+                    <img src="img/plus.svg" alt="betaal en verzenden">
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <p>Service</p>
+                    <img src="img/plus.svg" alt="service">
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <p>Algemeen</p>
+                    <img src="img/plus.svg" alt="algemeen">
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <p>My Jewellery</p>
+                    <img src="img/plus.svg" alt="my jewellery">
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <p>Stay in touch</p>
+                    <img src="img/plus.svg" alt="stay in touch">
+                </a>
+            </li>
         </ul>
-
+        <ul>
+            <li>
+                <a href="detail.html">
+                    <img src="" alt="">
+                    <p>Facebook</p>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <img src="" alt="">
+                    <p>Instagram</p>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <img src="" alt="">
+                    <p>Pinterest</p>
+                </a>
+            </li>
+            <li>
+                <a href="detail.html">
+                    <img src="" alt="">
+                    <p>TikTok</p>
+                </a>
+            </li>
+        </ul>
+        <img class="footerlogo" src="img/my-jewellery-logo.png" alt="logo">
     </footer>
-
     <script src="scripts/script.js"></script>
 </body>
 

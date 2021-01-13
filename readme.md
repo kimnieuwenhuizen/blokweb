@@ -9,7 +9,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 1. DLO
 2. Code Pen
 3. https://www.w3schools.com/html/html_responsive.asp
-4.
+4. https://www.w3schools.com/cssref/func_cubic-bezier.asp
+5. https://codepen.io/perry_nt/pen/eVboze
+6. https://css-tricks.com/almanac/properties/f/flex-wrap/
+7. https://www.w3schools.com/css/css_positioning.asp
+8. https://www.w3schools.com/css/css_display_visibility.asp
+9. https://www.handleidinghtml.nl/css/eigenschappen/display/beschrijving.html#block
+10.https://www.w3schools.com/cssref/css3_pr_transform.asp
+11.https://www.w3schools.com/cssref/css3_pr_overflow-x.asp
+12.https://www.w3schools.com/cssref/pr_list-style-type.asp
+
+
+
 
 
 
@@ -21,7 +32,31 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -screenshot(s) van je eindresultaat-
 
+## Vakantie
 
+In de vakantie heb ik mijn eindsprint gemaakt. Ik heb heel veel tijd gestoken in het herhalen van
+de oefenopdrachten en de tags die ik niet snapte onderzocht.
+
+Ook heb ik in de vakantie hulp gekregen van Babs. Ze heeft mij veel uitgelegd van dingen waar ik
+zelf niet op zou komen. Hiervan heb ik aatekeningen gemaakt:
+
+- <span> kan je stijlen. Zo heb ik het hamburger menu gemaakt en het kruisje om het hamburger menu
+te sluiten.
+
+- :root gebruiken -> je gebruikt een variabele, en alle tags die je deze variabele geeft worden
+deze kleur (in mijn geval) kan ook andere styling zijn.
+
+- transition -> ease: hamburger menu komt constant het beeld in.
+
+- cursor pointer gebruiken -> dat je ziet dat je eregns op kan klikken met je muis
+
+- de alt tags zijn voor de screenreader
+
+- scroll: snap -> als je door plaatjes scrollt dat het ene plaatje naar het andere plaatje springt
+
+- display blok: hoogte en breedte meegeven, anders alleen met padding en margin werken
+
+-
 
 ## Voortgang 3 (week 6)
 
@@ -37,7 +72,6 @@ hebben. Moet ik deze veranderen in divjes?
 of kan dit ook onder elkaar?
 
 
-Aantekeningen:
 
 ## Voortgang 2 (week 5)
 ### Agenda voor meeting
@@ -105,13 +139,14 @@ VOORTGANG 1 WEEK 3
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+-Ben verder gekomen met Danny met de navigatie bar. De plaatjes in de
+navigatie bar zelf opzoeken en dezelfde grootes maken.-
 
 
 
 ## Breakdownschets (week 1)
 
-Breakdownschetsen had ik uitgeprint en met handgeschreven gemaakt.
+Breakdownschetsen had ik uitgeprint en met de hand gemaakt.
 
 
 

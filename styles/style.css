@@ -1,260 +1,646 @@
-/* CSS Document */
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
+/* alle variabele waar je dit bij zet deze kleur*/
+:root {
+    --nav: #f6f5f5;
+    --roze: #E9B9C4;
+}
 
+* {
+    font-family: 'work sans', sans-serif;
+    font-weight: 300;
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
-    line-height: 1.42857;
-
+    padding: 0;
+    margin: 0;
 }
 
-img {
-    max-width: 100%;
+/* navigatie bar*/
+
+header {
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 3
 }
 
-ul {
+/* afbeeldingen navigatie bar */
+header img {
+    width: 1.5em;
+    height: 1.5em;
+    margin: .5em;
+}
+
+/* roze kruis hamburger menu */
+header div:last-child {
+    background: var(--roze);
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    border-radius: 100%;
+    margin: 0;
+    display: none;
+}
+
+
+header div.nieuwitem {
+    display: block;
+    animation: melding 0.5s ease;
+}
+
+header img:nth-of-type(3) {
+    height: 2.5em;
+    width: 5em;
+    margin: auto 3em;
+}
+
+/* 'menu' wat hamburger menu wordt */
+header div {
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+header div span {
+    display: block;
+    width: 1.5em;
+    height: 0.05em;
+    background: black;
+    position: relative;
+    left: .4em;
+}
+
+header div span:nth-of-type(1) {
+    top: .7em
+}
+
+header div span:nth-of-type(2) {
+    top: 1.1em
+}
+
+header div span:nth-of-type(3) {
+    top: 1.505em
+}
+
+header div p {
+    font-size: .7em;
+    position: relative;
+    top: 1.3em;
+    left: .3em
+}
+
+
+/* hamburger menu */
+
+header nav {
+    display: block;
+    width: 90%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 3;
+    overflow: scroll;
+    transition: 0.5s ease;
+}
+
+header nav h2 {
+    margin: .5em;
+}
+
+header nav div {
+    position: fixed;
+    right: 100%;
+    top: 0;
+    background: var(--roze);
+    width: 10%;
+    height: 3em;
+    margin: 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+header nav div span {
+    top: 1.25em !important;
+    left: 25%;
+    background: white;
+}
+
+header nav div span:first-of-type {
+    transform: rotate(45deg);
+}
+
+header nav div span:last-of-type {
+    transform: rotate(-45deg);
+}
+
+header nav ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+header nav ul li {
+    background: var(--nav);
+    padding: .5em;
+    margin: .5em;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin: auto 1em;
+}
+
+header nav ul li img {
+    width: 1em
+}
+
+
+/*micro interactie hamburgermenu*/
+header nav.open {
+    left: 0;
+}
+
+header nav div.open {
+    right: 0;
+}
+
+/* snelle levering binnen 1-2 dagen */
+main p:first-of-type {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    margin: 0;
+    font-size: .8em;
+    text-align: center;
+    margin-top: 4em;
+}
+
+/* new arrivals grote afbeelding */
+main img:first-of-type {
+    width: 100%;
+    height: 35em;
+}
+
+/* shop now button */
+main button {
+    background: white;
+    color: black;
+    border-radius: .2em;
+    padding: .5em 1em;
+    font-size: 1em;
+    border: none;
+    position: absolute;
+    top: 37em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* categorieen */
+main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+main ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 1em;
+}
+
+/*animatie!!!!!    HOVER events over catergorieen*/
+.btn {
+    position: relative;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.btn:before,
+.btn:after {
+    content: '';
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+}
+
+.btn:hover p {
+    color: black !important;
+    transition-delay: .5s;
+}
+
+.btn:hover:before {
+    transition-delay: 0s;
+}
+
+.btn:hover:after {
+    background: var(--nav) !important;
+    transition-delay: .35s;
+}
+
+.from-left:before,
+.from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.from-left:before {
+    right: 0;
+    border: 2px solid var(--nav);
+    border-left: 0;
+    border-right: 0;
+}
+
+.from-left:after {
+    left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+    width: 100%;
+}
+
+
+/* categorieen */
+main ul li a p:first-of-type {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--roze);
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0em;
+    width: 100%;
+    text-align: left
+}
+
+
+main ul li a img:first-of-type {
+    display: block;
+    width: 4.5em;
+    height: 4.5em;
+}
+
+/* myjewellery styled by you */
+h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* myjewellery styled by you scroll event */
+main section ul {
+    display: flex;
+    overflow-x: scroll;
+}
+
+/* myjewellery styled by you scroll events images*/
+main section ul li img {
+    display: block;
+    width: 10em !important;
+    height: 12em !important;
+    margin: .2em;
+}
+
+
+/* sieraden, accessoires en kleding tekstje */
+main p:last-of-type {
+padding: 0.5em;
+}
+
+
+/* footer */
+footer {
+    margin-top: 3em;
+    background: black;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul li a {
+    width: 98%;
+    color: white;
+    text-decoration: none;
+    margin-left: 1%
+}
+
+/* algemeen */
+footer ul:first-of-type li a {
+    border-bottom: 0.01em solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul:first-of-type li a p {
+    font-weight: 600;
+}
+
+footer ul:first-of-type li a img {
+    width: 1.7em;
+    margin-right: 1em;
+}
+
+footer img.footerlogo {
+    width: 1em;
+    display: block;
+    margin: auto;
+    padding: 1em
+}
+
+footer ul:last-of-type li a p {
+    padding: 0.5em;
+}
+
+/* categorieen */
+main ul:first-child {
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: row;
+}
+
+main ul:first-child li img {
+    width: 60vw;
+    margin: 3em 20vw;
     display: block;
 }
 
+/* DETAIL PAGINA */
 
-/* INDEX PAGINA */
-/* NAVIGATIE BAR */
-header img {
-    width: 50px;
-    height: 50px;
+
+main.detail section {
+    margin: 1em
 }
 
-header svg
- /*
-header img:nth-of-type(3) {
-    width: 50px;
-    height: 50px;
+main.detail a {
+    color: #888888;
+    text-decoration: none;
+    font-size: .9em;
 }
 
-header img:nth-of-type(4) {
-    width: 50px;
-    height: 50px;
+main.detail a:hover {
+    text-decoration: underline;
 }
 
-header img:nth-of-type(5) {
-    width: 50px;
-    height: 50px;
+/* afbeeldingen product */
+main.detail section img:nth-child(4) {
+    width: 7em;
+    height: 1em
 }
 
-header img:nth-of-type(6) {
-    width: 50px;
-    height: 50px;
-}
-*/
 
-
-/* Gratis verzending met Budbee */
-section:nth-of-type(1) h1{
-    background-color: black;
-    text-align: center;
-    padding: 1em;
-    color: white;
-    font-size: 0.8em;
-    margin-top: 1em;
-    margin-bottom: 0em;
-    padding: 0.68em 1em;
-    margin-left: -1em;
-    margin-right: -2em;
-
-}
-
-.logo {
-    height: 2.5em;
-    width: 4.8em;
-}
-
-.shopnow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 18em;
-    margin-bottom: 0em;
-    position: absolute;
-    padding: 10px 20px;
-    background: #ffffff;
+main.detail section a:nth-child(5) {
+    color: black;
     font-size: 1em;
-    border-radius: 4px;
-    border: #ffffff;
-
-
 }
 
-div {
-    margin-left: -1em;
-    margin-right: -1em;
-    margin-top: -11em;
-    margin-bottom: 1em;
-
-
-}
-
-header {
-    z-index: 2;
-    display: flex;
+main.detail section ul:nth-child(6) {
     justify-content: space-around;
-    align-items: center;
+    overflow-x: hidden;
 }
 
-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50em;
-}
-
-
-h2: first-of-type {
-    font-size: 1em;
-
-}
-
-/* Categorien */
-section:nth-of-type(2) ul li {
-    display: flex;
-    width: 100%;
-    background: lightgrey;
-    padding: 1em;
-    margin-top: 0.2em;
-    margin-left: -0.5em;
-    margin-right: -3em;
-
-
-}
-
-section:nth-of-type(2) li img {
-    margin-left: auto;
-}
-
-section:nth-of-type(2) ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: -12em;
-    margin-right: -2em;
-
-
-}
-
-section:nth-of-type(2) ul img {
-    width: 4.5em;
-    height: 4.5em;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-}
-
-/* Shop our favorite gifts */
-h3:last-of-type {
-    margin-top: 1em;
-    font-size: 1.8em;
-    font-weight: 800;
-
-
-}
-
-
-h4 {
-    margin-top: -1.5em;
-}
-
-h5 {
-    font-size: 0.7em;
-    margin-top: -1.2em;
-}
-
-h6 {
-    font-size: 0.7em;
-    color: #DA92AD;
-    margin-top: 1.5em;
-}
-
-
-/* FAVORIETEN */
-section:nth-of-type(3) ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 1em;
-
-}
-
-section:nth-of-type(3) ul li {
-    margin-right: 0;
-
-}
-
-section:nth-of-type(3) ul li:nth-of-type(2) p {
-    margin-left: 1.6em;
-}
-
-section:nth-of-type(3) ul li:nth-of-type(3) p {
-    margin-left: 1.1em;
-}
-
-
-
-
-/* DETAILPAGINA */
-
-/* routepad */
-.route {
-    font-size: 0.7em;
-    color: #888888
-}
-
-/* titel adventkalender */
-.titel {
-   font-size: 0.6em;
-}
-
-/* prijs adventkalender */
-
-.prijs {
-   font-size: 0.9em;
-
-}
-
-/* schrijf eerste review */
-.review {
-    font-size: 0.8em;
-    color: #DD92A3;
-    text-decoration-line: underline;
-
-}
-
-.winkelwagen {
-   font-size: 18px;
-    color: white;
-    background-color: #E9B9C4;
-    padding: 14px 17px;
-    border: none;
-    border-radius: 0.2em;
-}
-/* FOOTER */
-footer ul {
-    margin-top: 1em;
-    margin-left: -2em;
-    margin-right: -2em;
-    margin-bottom: -3em;
-    padding-top: 0.2em;
-    padding-bottom: 1em;
-    color: white;
-    background-color: black;
-    list-style-type: none;
-}
-
-footer ul li {
+main.detail section ul:nth-child(6) li {
+    width: 30%;
+    max-width: 10em;
     margin-top: 2em;
+}
 
+main.detail section ul:nth-child(6) li img {
+    display: block;
+    width: 2.7em !important;
+    height: 4em !important;
+    margin: auto;
+    padding: 0
+}
+
+main.detail section ul:nth-child(6) li a {
+    font-size: .9em;
+    background-color: white;
+    text-align: center;
+    display: block;
+    color: black;
+}
+
+main.detail section section {
+    background-color: var(--nav);
+    margin: 3em 0 1em;
+    padding: .3em
+}
+
+/* kies kleur en letter */
+main.detail section section h3 {
+    font-size: .8em;
+    font-weight: 500;
+    padding: 1em
+}
+
+main.detail section section h4 {
+    font-size: .8em;
+    padding: 1em 1em .5em;
+    margin: 0;
+    width: 90%
+}
+
+main.detail section section section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0
+}
+
+main.detail section section button {
+    position: static;
+    border: .1em solid black;
+    padding: .2em .5em !important;
+    margin: 0em -2em 0em 3.5em;
+    display: flex;
+    flex-direction: row;
+    z-index: 0 !important;
+}
+
+main.detail section section button img {
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+}
+
+main.detail section section button p {
+    margin: .1em .5em;
+    padding: 0;
+    color: black;
+    background-color: white;
+}
+
+/* kies letter */
+select {
+    width: 95%;
+    display: block;
+    margin: auto;
+    padding: 1em;
+    border-radius: .5em
+}
+
+/* button in winkelwagen */
+main.detail section section button.winkelwagen {
+    background-color: var(--roze);
+    color: white !important;
+    font-weight: 600;
+    display: block;
+    width: 10em;
+    text-align: center;
+    padding: .7em;
+    border-radius: .5em;
+    margin: 1em 1em 1em 6em;
+    border: none;
+}
+
+main.detail section section button.winkelwagen p {
+    background-color: var(--pink);
+    color: white;
+    font-size: 1em;
+    margin: .5em;
+    font-weight: 600;
+}
+
+/* kenmerken, omschrijving en specificaties */
+main.detail section ul:nth-of-type(2) {
+    justify-content: space-around;
+}
+
+main.detail section ul:nth-of-type(2) li {
+    width: 10em;
+    border-bottom: .5em solid var(--nav);
+}
+
+main.detail section ul:nth-of-type(2) li:first-of-type {
+    border-bottom: .5em solid var(--roze);
+}
+
+main.detail section ul:nth-of-type(2) li:first-of-type p {
+    color: black
+}
+
+main.detail section ul:nth-of-type(2) li p {
+    background: white;
+    color: #888888;
+    font-weight: 500;
+    text-align: center;
+    margin: 1em
+}
+
+/* details kenmerken product lijst  */
+main.detail section ol {
+    display: block;
+    list-style-type: disc;
+}
+
+main.detail section ol li {
+    padding: .5em;
+    font-size: .9em
+}
+
+main.detail section ul li a {
+    background: white;
+    color: #3f3f3f
+}
+
+main.detail section ul li p {
+    background: white;
+    color: black;
+    text-align: left;
+    font-weight: 600;
+    margin-top: .5em;
+    padding: 0;
+}
+
+
+/* chat rondje rechts onderaan*/
+main a.chat {
+    background-image: url(../img/chat.png);
+    display: block;
+    width: 4em;
+    height: 4em;
+    background-size: cover;
+    border-radius: 100%;
+    border: .3em solid #EF008C;
+    position: fixed;
+    z-index: 100;
+    bottom: 3em;
+    right: 3em;
+    animation: float 6s ease-in-out infinite;
+}
+
+main a.chat div {
+    background: #00A896;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    right: -.5em;
+    border: .2em solid white;
+    transition: ease-in;
+}
+
+/* focus states */
+
+button:focus,
+a:focus,
+li:focus,
+p:focus,
+select:focus {
+    outline: .2em solid var(--roze) !important;
+    background: rgba(233, 185, 196, 0.5) !important;
+}
+
+
+/* animaties */
+
+/* melding in winkelwagen */
+
+@keyframes melding {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* chat functie float */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1em);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
